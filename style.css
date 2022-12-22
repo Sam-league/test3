@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.light-mode {
+  color: #1b2430;
+  background-color: white;
+}
+
+.dark-mode {
+  color: whitesmoke;
+  background-color: #1b2430;
+}
+#theme {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  font-size: 2.5rem;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+
+#heading {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-shadow: 4px 4px 2px rgba(50, 168, 202, 0.6);
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.colorBox {
+  height: 40vh;
+  width: 20vw;
+  background-color: crimson;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.btn-grp {
+  height: 10vh;
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-grp button {
+  height: 85%;
+  width: 42%;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: cornflowerblue;
+}
+
+.btn-grp button:active {
+  box-shadow: 9px 7px 5px -4px rgba(145, 145, 145, 1);
+  /* border: 6px inset grey; */
+}
+
+.selectedColors {
+  position: absolute;
+  right: 1%;
+  top: 5%;
+  height: 70vh;
+  width: 23vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.selectedColors h2 {
+  font-size: 2.2rem;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  height: 70%;
+  width: 100%;
+}
+.cell {
+  height: 20%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.4rem;
+}
+
+.cell i {
+  cursor: pointer;
+}
+.cell i:hover {
+  color: cornflowerblue;
+}
